@@ -1,0 +1,65 @@
+cd project_folder
+
+git status
+
+git add .
+
+git commit -am "Responsive fixes"
+
+git push origin master
+
+new branch in master branch>> git checkout -b "branch-name"
+
+browser-sync start --server --file "D:\wamp\www\mars-html-v3"
+
+
+ssh-keygen -t rsa
+
+cat >> the path given in ssh key
+
+cache clear all
+php artisan config:cache
+
+creating migration file
+php artisan make:migration create_category_table --create=category
+
+RollBack
+php artisan migrate:rollback
+
+
+-----------------Composer Commands
+
+set config before migration > [Ansib] Done[app/providers/services-providers]
+
+DB type have to change
+
+
+----------role and permissions
+
+INSERT INTO `admin_roles` (`id`, `name`, `slug`, `created_at`, `updated_at`) VALUES (NULL, 'Administrator', 'administrator', '2018-05-11 00:00:00', '2018-05-11 00:00:00')
+
+INSERT INTO `admin_permissions` (`id`, `name`, `slug`, `http_method`, `http_path`, `created_at`, `updated_at`) VALUES (NULL, 'All permission', '*', NULL, '*', NULL, NULL)
+
+
+----------role and permissions end
+
+php artisan make:model category
+
+--------------creating controller admin-----------
+$ php artisan admin:make OrdersController --model=App\\orderDet
+
+
+alter query reference
+
+https://stackoverflow.com/questions/16791613/add-a-new-column-to-existing-table-in-a-migration
+
+
+
+add foreing key contraint to existing table 
+Schema::table('objects', function (Blueprint $table) {
+    $table->integer('holding_id')->unsigned()->index()->nullable();
+
+    $table->foreign('holding_id')->references('id')->on('holdings');
+});
+
+

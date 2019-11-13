@@ -1,0 +1,116 @@
+Category >> [Appliances >> Water, cooking, cooling, large etc]
+ID
+Title
+catogory img
+status(0/1)
+
+
+Sub Catogories [all products in sub catogory]
+ID
+title
+image
+catogory foreign key
+status(0/1)
+
+Product>> [iron, oven, fridge etc]
+ID
+title
+price
+discount
+size [multi slect]
+brand name
+foreign key from sub category
+brand name or vendor [by samsung]
+multiple images slider
+decription(Ck Editor)
+status(0/1)
+---------
+
+Media table>>
+id
+product id (nullable)
+Url
+type(1,2,3)
+status (0/1)
+
+-----------
+Single Product
+name
+price
+discount
+size multi slect
+color
+brand name or vendor [by samsung]
+multiple images slider
+products decription(Ck Editor)
+quantity
+status(0/1)
+
+-------------
+
+Cart>>
+ID
+categoryId
+subCategoryid
+productId
+
+size small, medium, large, xl ,xxl
+quantity [constant 1 to 10]
+unit price
+per item total price
+cart total price
+status[0/1]
+
+
+
+----------
+order_mast>>
+id
+user_id from order users
+foreign key of category
+foreign key of sub category
+foreign key of products
+paidPrice
+
+
+--------------
+Orders_det>>
+Id
+userId > from users
+size of product
+quantity
+color
+
+
+
+
+Users>>
+Last name
+
+gender
+telephone + optional telephone
+address
+Region [punjab, Sindh]
+City [lahore]
+email
+is_verified (default=0)
+payment type
+
+
+credit card number
+expiry date
+card holder name
+card holder last name
+status
+------------------
+Chekcout>>
+Id
+Email ID
+firstname
+Last name
+address
+gender
+telephone + optional telephone
+Region [punjab, Sindh]
+City [lahore]
+email

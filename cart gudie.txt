@@ -1,0 +1,13 @@
+https://github.com/Crinsane/LaravelShoppingcart
+
+install rom cmd
+
+
+add line to config file >> To do this open your config/app.php file.
+Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class
+
+
+And optionally add a new line to the aliases array:
+'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
+
+

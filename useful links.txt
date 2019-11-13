@@ -1,0 +1,4 @@
+https://hotexamples.com/examples/encore.admin.facades/Admin/-/php-admin-class-examples.html [facades]
+
+disable functions
+https://github.com/z-song/demo.laravel-admin.org/blob/master/public/docs/v1.4/en/model-grid.md

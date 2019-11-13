@@ -1,0 +1,12 @@
+1.first of all create model with name of table
+php artisan make:model SubCategories -m
+
+2. Add table in model file this way
+
+protected $table = 'sub_category';
+
+3.create controller from cmd with the same name as tha model name
+
+php artisan admin:make SubCategoryController --model=App\\SubCategory
+
+4. Add route path in admin route file 
